@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Suzuki</title>
+</head>
+<body>
+	<section>
+				<header>	
+		<a href="#"  class="logo"><img src="logo.png" alt=""></a>
+		<div class="toggle" onclick="toggleMenu()">	</div>
+				</header>
+ 
+				<div class="play" onclick="videoToggle();">	
+					<a href="#"><li class="fas fa-play-circle"></li></a><span>	Play Video</span>
+				</div>
+				<ul class="sci">
+				<li><a href="#"><i class="fab fa-vk"></i> </a></li>
+				<li><a href="#"><i class="fab fa-facebook-square"></i> </a></li>	
+				<li><a href="#"><i class="fab fa-instagram-square"></i> </a></li>		
+				</ul>
+				<div class="navigation">
+					<ul>
+						<li>
+ 							<a href="#">Home</a></li>
+						<li>
+ 							<a href="#">About</a></li>
+						<li>
+							<a href="#">Test Drive</a></li>
+						<li>
+							<a href="#">Contacts</a></li>
+					</ul>
+				</div>
+	</section>
+	<div class="trailer">
+		<video src="clip.mp4" controls="true"></video>
+		<img src="close.png" class="close" onclick="videoToggle() " alt="">
+	</div>
+<script type="text/javascript">
+	function toggleMenu(){
+		const menuToggle = document.querySelector('.toggle');
+		const navigation = document.querySelector('.navigation');
+		menuToggle.classList.toggle('active')
+		navigation.classList.toggle('active')
+	}
+		function videoToggle(){
+		const trailer = document.querySelector('.trailer');
+		const video = document.querySelector('video');
+		trailer.classList.toggle('active');
+		}
+</script>
+<script src="https://kit.fontawesome.com/ef24fd9244.js"></script>
+	
+</body>
+</html>
