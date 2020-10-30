@@ -16,7 +16,7 @@ section
 	-ms-align-items: center;
 	align-items: center;
 	min-height: 100vh;
-	background:   url(bg.png),url(mask.jpg.);
+	background:   url(bg.png);
 	background-blend-mode: screen;
 	-webkit-background-size: cover;
 	background-size: cover;
